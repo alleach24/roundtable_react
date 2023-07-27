@@ -6,6 +6,7 @@ import { TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 // import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
+import OfflineScreen from '../screens/OfflineScreen';
 import RoundTimerScreen from '../screens/RoundTimerScreen';
 // import { BoldText } from '../components/styled-text';
 // import AddUnsplashImage from '../screens/home/unsplash';
@@ -38,6 +39,11 @@ const HomeNavigation = () => {
       <Stack.Screen
         name="home"
         component={HomeScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="offline"
+        component={OfflineScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen

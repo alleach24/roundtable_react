@@ -1,9 +1,17 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-const RoundTimer = ({ navigation }) => (
+const OfflineScreen = ({ navigation }) => (
   <View style={styles.container}>
-    <Text style={styles.title}>Roundtable Rodeo</Text>
+    <Text style={styles.title}>Offline Game</Text>
+    <Button
+      title="Whiteboard"
+      //   onPress={() => navigation.navigate('whiteboard')}
+    />
+    <Button
+      title="Round Timer"
+      onPress={() => navigation.navigate('round-timer')}
+    />
     <Button title="Back" onPress={() => navigation.goBack()} />
   </View>
 );
@@ -21,4 +29,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default RoundTimer;
+export default OfflineScreen;

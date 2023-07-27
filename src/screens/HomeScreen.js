@@ -3,11 +3,14 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 
 const HomeScreen = ({ navigation }) => (
   <View style={styles.container}>
-    <Text style={styles.title}>Welcome to the Home Screen!</Text>
+    <Text style={styles.title}>Roundtable Rodeo</Text>
     <Button
-      title="In-Person Round Timer"
-      onPress={() => navigation.navigate('round-timer')}
+      title="Offline Game"
+      onPress={() => navigation.navigate('offline')}
     />
+    <Button title="Online Game" />
+    <Button title="Rules" />
+    {/* Website, Social Media, ... */}
   </View>
 );
 
