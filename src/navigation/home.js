@@ -8,6 +8,7 @@ import { useNavigation } from '@react-navigation/native';
 import HomeScreen from '../screens/HomeScreen';
 import OfflineScreen from '../screens/OfflineScreen';
 import RoundTimerScreen from '../screens/RoundTimerScreen';
+import WhiteboardScreen from '../screens/WhiteboardScreen';
 // import { BoldText } from '../components/styled-text';
 // import AddUnsplashImage from '../screens/home/unsplash';
 
@@ -49,6 +50,11 @@ const HomeNavigation = () => {
       <Stack.Screen
         name="round-timer"
         component={RoundTimerScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="whiteboard"
+        component={WhiteboardScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

@@ -6,7 +6,7 @@ const OfflineScreen = ({ navigation }) => (
     <Text style={styles.title}>Offline Game</Text>
     <Button
       title="Whiteboard"
-      //   onPress={() => navigation.navigate('whiteboard')}
+      onPress={() => navigation.navigate('whiteboard')}
     />
     <Button
       title="Round Timer"
